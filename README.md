@@ -13,9 +13,8 @@
 
 </div>
 
-This is a Framework agnostic project builder template with a relatively basic initial setup for the
-[Project Builder](https://github.com/CPS-IT/project-builder). It facilitates a swift and easy-to-use creation
-Composer based PHP projects.
+This is a framework agnostic [Project Builder](https://github.com/CPS-IT/project-builder) template with a relatively basic initial setup. It facilitates a swift and easy-to-use creation
+of Composer based PHP projects.
 
 ## 🚀 Features
 
