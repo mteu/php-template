@@ -13,18 +13,15 @@
 	"require": {},
 	"require-dev": {
 		"armin/editorconfig-cli": "^1.5",
-{% if features.deployer %}
-		"deployer/deployer": "^7.0",
-{% endif %}
 		"ergebnis/composer-normalize": "^2.28",
 {% if features.phpstan %}
 		"phpstan/extension-installer": "^1.2",
 		"phpstan/phpstan": "^1.8",
 {% endif %}
-		"roave/security-advisories": "dev-latest",
 {% if features.rector %}
 		"rector/rector": "^0.15",
 {% endif %}
+		"roave/security-advisories": "dev-latest"
 	},
 	"repositories": [
 		{
@@ -36,7 +33,7 @@
 		"allow-plugins": {
 {% if features.phpstan %}
 			"ergebnis/composer-normalize": true,
-			"phpstan/extension-installer": true,
+			"phpstan/extension-installer": true
 {% else %}
 			"ergebnis/composer-normalize": true
 {% endif %}
@@ -83,7 +80,7 @@
 		"test": [
 			"@test:unit"
 		],
-		"test:unit": "phpunit -c phpunit.xml",
+		"test:unit": "phpunit -c phpunit.xml"
 	},
 	"scripts-descriptions": {
 		"fix": "Fix all code quality issues reported by the registered linters",
