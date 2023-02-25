@@ -50,7 +50,7 @@ proposing a PR. Thanks!
 
 ## 💛 Acknowledgement
 This template is heavily based on the preparatory work done by [@eliashaeussler](https://github.com/eliashaeussler) and
-[@mteu](https://github.com/mteu) in the [TYPO3 Template Package](https://github.com/CPS-IT/typo3-project-template).
+me in the [TYPO3 Template Package](https://github.com/CPS-IT/typo3-project-template).
 
 ## ⭐ License
 
