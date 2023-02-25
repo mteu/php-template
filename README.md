@@ -4,7 +4,6 @@
 
 [![CGL](https://github.com/mteu/basic-project-template/actions/workflows/cgl.yaml/badge.svg)](https://github.com/mteu/basic-project-template/actions/workflows/cgl.yaml)
 [![Latest Stable Version](http://poser.pugx.org/mteu/basic-project-template/v)](https://packagist.org/packages/mteu/basic-project-template)
-[![Total Downloads](http://poser.pugx.org/mteu/basic-project-template/downloads)](https://packagist.org/packages/mteu/basic-project-template)
 [![License](http://poser.pugx.org/mteu/basic-project-template/license)](LICENSE.md)
 
 :package:&nbsp;[Packagist](https://packagist.org/packages/mteu/basic-project-template) |
@@ -31,22 +30,27 @@ of Composer based PHP projects.
 
 ## 🔥 Getting started
 
-1. [Create](https://github.com/CPS-IT/project-builder/blob/main/docs/usage.md) a new project:
+1. Create a new project:
 
    ```bash
-   composer create-project cpsit/project-builder
+   composer create-project cpsit/project-builder <target-directory>
    ```
 
 2. Select `Packagist.org` as template source.
 3. Select the package `mteu/basic-project-template`.
-4. Answer all questions and you're ready to go.
+4. Answer all questions, follow the instructions, and you're good to go.
+
+   > 💡 Please refer to the official Project Builder [documentation](https://github.com/CPS-IT/project-builder/blob/main/docs/usage.md)
+   > to learn about alternative ways to create your project.
 
 ## 👩‍💻:🧑‍💻 Contribution
 
-Please have a look at [`CONTRIBUTING.md`](CONTRIBUTING.md).
+We welcome your feedback and ideas! One quick ask, though: Please do consult [`CONTRIBUTING.md`](CONTRIBUTING.md) before
+proposing a PR. Thanks!
 
 ## 💛 Acknowledgement
-This template is heavily based on the work done by [@eliashaeussler](https://github.com/eliashaeussler) and [@mteu](https://github.com/mteu) in the TYPO3 Template Package.
+This template is heavily based on the preparatory work done by [@eliashaeussler](https://github.com/eliashaeussler) and
+[@mteu](https://github.com/mteu) in the [TYPO3 Template Package](https://github.com/CPS-IT/typo3-project-template).
 
 ## ⭐ License
 
