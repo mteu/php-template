@@ -1,6 +1,6 @@
 {
 	"name": "mteu/basic-project-template",
-	"description": "Framework agnostic Project Builder template with a relatively basic initial setup",
+	"description": "Very basic, framework agnostic template",
 	"license": "GPL-3.0-or-later",
 	"type": "project-builder-template",
 	"authors": [
