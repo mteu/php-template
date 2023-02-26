@@ -12,13 +12,13 @@ steps:
         - path: 'rector.php.twig'
           if: 'features["rector"]'
         # Licenses
-        - path: 'license/GPL-2.0.txt'
+        - path: 'licenses/GPL-2.0.txt'
           if: 'project["license"] == "GPL-2.0-or-later"'
           target: 'LICENSE.txt'
-        - path: 'license/GPL-3.0.txt'
+        - path: 'licenses/GPL-3.0.txt'
           if: 'project["license"] == "GPL-3.0-or-later"'
           target: 'LICENSE.txt'
-        - path: 'license/MIT.txt.twig'
+        - path: 'licenses/MIT.txt.twig'
           if: 'project["license"] == "MIT"'
           target: 'LICENSE.txt'
   - type: generateBuildArtifact
