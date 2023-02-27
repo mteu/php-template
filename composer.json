@@ -7,16 +7,17 @@
 		{
 			"name": "Martin Adler",
 			"email": "mteu@mailbox.org",
+			"homepage": "https://github.com/mteu/",
 			"role": "Maintainer"
 		}
 	],
 	"require": {
-		"cpsit/project-builder": "dev-main"
+		"cpsit/project-builder": "^1.7"
 	},
 	"require-dev": {
 		"armin/editorconfig-cli": "^1.5",
-		"ergebnis/composer-normalize": "^2.29",
-		"friendsoftwig/twigcs": "^6.0"
+		"ergebnis/composer-normalize": "^2.30",
+		"friendsoftwig/twigcs": "^6.2"
 	},
 	"config": {
 		"allow-plugins": {
