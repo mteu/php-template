@@ -17,14 +17,7 @@ of Composer based PHP projects.
 
 ## 🚀 Features
 
-### Core features
-
-* Blank'ish Composer-based project template
 * Ready-to-use [DDEV](https://ddev.readthedocs.io) configuration
-* Support of current stable PHP versions >= 8.1
-
-### Optional features
-
 * Static code analysis template with [PHPStan](https://phpstan.org/)
 * Automatic code migration with [Rector](https://getrector.com/)
 
@@ -40,8 +33,8 @@ of Composer based PHP projects.
 3. Select the package `mteu/basic-project-template`.
 4. Answer all questions, follow the instructions, and you're good to go.
 
-   > 💡 Please refer to the official Project Builder [documentation](https://github.com/CPS-IT/project-builder/blob/main/docs/usage.md)
-   > to learn about alternative ways to create your project.
+> 💡 Please refer to the official Project Builder [documentation](https://github.com/CPS-IT/project-builder/blob/main/docs/usage.md)
+> to learn about alternative ways to create your project.
 
 ## 👩‍💻:🧑‍💻 Contribution
 
@@ -54,4 +47,4 @@ me in the [TYPO3 Template Package](https://github.com/CPS-IT/typo3-project-templ
 
 ## ⭐ License
 
-This project is licensed under [GNU General Public License 3.0 (or later)](LICENSE.md).
+This project template is licensed under [GNU General Public License 3.0 (or later)](LICENSE.md).

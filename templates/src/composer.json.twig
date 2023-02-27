@@ -1,7 +1,9 @@
 {
 	"name": "{{ project.package_name }}",
 	"description": "Project bundle for the {{ project.name }} project",
-	"license": "GPL-2.0-or-later",
+{% if project.license %}
+	"license": "{{ project.license }}",
+{% endif %}
 	"type": "project",
 	"authors": [
 		{

@@ -5,17 +5,22 @@ steps:
   - type: processSourceFiles
     options:
       fileConditions:
-        # Deployer
-        - path: '.deployment/*'
-          if: 'features["deployer"]'
-        - path: 'deploy.php'
-          if: 'features["deployer"]'
         # PHPStan
         - path: 'phpstan.neon'
           if: 'features["phpstan"]'
         # Rector
         - path: 'rector.php.twig'
           if: 'features["rector"]'
+        # Licenses
+        - path: 'licenses/GPL-2.0.txt'
+          if: 'project["license"] == "GPL-2.0-or-later"'
+          target: 'LICENSE.txt'
+        - path: 'licenses/GPL-3.0.txt'
+          if: 'project["license"] == "GPL-3.0-or-later"'
+          target: 'LICENSE.txt'
+        - path: 'licenses/MIT.txt.twig'
+          if: 'project["license"] == "MIT"'
+          target: 'LICENSE.txt'
   - type: generateBuildArtifact
   - type: mirrorProcessedFiles
   - type: showNextSteps
@@ -49,6 +54,13 @@ properties:
         validators:
           - type: notEmpty
           - type: url
+      - identifier: license
+        name: License
+        type: select
+        options:
+          - value: GPL-2.0-or-later
+          - value: GPL-3.0-or-later
+          - value: MIT
 
   # Packages
   - identifier: packages
