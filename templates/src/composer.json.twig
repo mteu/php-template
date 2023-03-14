@@ -57,13 +57,11 @@
 		"lint": [
 			"@lint:composer",
 			"@lint:editorconfig",
-			"@lint:php",
-			"@lint:typoscript"
+			"@lint:php"
 		],
 		"lint:composer": "@composer normalize --dry-run",
 		"lint:editorconfig": "ec",
-		"lint:php": "php-cs-fixer fix --dry-run",
-		"lint:typoscript": "typoscript-lint",
+		"lint:php": "php-cs-fixer fix --dry-run"
 {% if features.rector %}
 		"migration": [
 			"@migration:rector"
