@@ -21,6 +21,12 @@ steps:
         - path: 'licenses/MIT.txt.twig'
           if: 'project["license"] == "MIT"'
           target: 'LICENSE.txt'
+        - path: 'foo/bay/*'
+          if: 'true'
+          target: '{{ project.name|slugify}}-bay/*'
+        - path: 'foo/*'
+          if: 'true'
+          target: '{{ project.name|slugify}}-foo/*'
   - type: generateBuildArtifact
   - type: mirrorProcessedFiles
   - type: showNextSteps
