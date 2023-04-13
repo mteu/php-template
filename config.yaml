@@ -22,9 +22,11 @@ steps:
           if: 'project["license"] == "MIT"'
           target: 'LICENSE.txt'
         - path: 'foo/bay/*'
-          target: '{{ project.name|slugify}}-bay/*'
+          if: 'true'
+          target: '{{ project.name|slugify }}-bay/*'
         - path: 'foo/*'
-          target: '{{ project.name|slugify}}-foo/*'
+          if: 'true'
+          target: '{{ project.name|slugify }}-foo/*'
   - type: generateBuildArtifact
   - type: mirrorProcessedFiles
   - type: showNextSteps
