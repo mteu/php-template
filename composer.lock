@@ -82,16 +82,16 @@
         },
         {
             "name": "cpsit/project-builder",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CPS-IT/project-builder.git",
-                "reference": "c9cb6b26d2c40123733fb2bc4a61fa9dd52924fd"
+                "reference": "7fccd34ca0a6826198090bbaf3bd3bc2367e44ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CPS-IT/project-builder/zipball/c9cb6b26d2c40123733fb2bc4a61fa9dd52924fd",
-                "reference": "c9cb6b26d2c40123733fb2bc4a61fa9dd52924fd",
+                "url": "https://api.github.com/repos/CPS-IT/project-builder/zipball/7fccd34ca0a6826198090bbaf3bd3bc2367e44ac",
+                "reference": "7fccd34ca0a6826198090bbaf3bd3bc2367e44ac",
                 "shasum": ""
             },
             "require": {
@@ -163,9 +163,9 @@
             "description": "Composer package to create new projects from project templates",
             "support": {
                 "issues": "https://github.com/CPS-IT/project-builder/issues",
-                "source": "https://github.com/CPS-IT/project-builder/tree/2.2.0"
+                "source": "https://github.com/CPS-IT/project-builder/tree/2.2.1"
             },
-            "time": "2023-04-13T15:07:52+00:00"
+            "time": "2023-04-25T09:42:36+00:00"
         },
         {
             "name": "cuyz/valinor",
