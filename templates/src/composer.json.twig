@@ -80,7 +80,7 @@
 		"sca": [
 			"@sca:php"
 		],
-		"sca:php": "phpstan analyse -c phpstan.neon --memory-limit=2G $(find packages -mindepth 2 -maxdepth 2 -type d -name 'Classes' -o -name 'Configuration' -o -name 'Tests')",
+		"sca:php": "phpstan analyse -c phpstan.neon --memory-limit=2G",
 {% endif %}
 		"test": [
 			"@test:unit"
