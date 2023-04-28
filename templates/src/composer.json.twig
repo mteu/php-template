@@ -61,7 +61,12 @@
 		],
 		"lint:composer": "@composer normalize --dry-run",
 		"lint:editorconfig": "ec",
+{%if not features.rector and not features.phpstan %}
 		"lint:php": "php-cs-fixer fix --dry-run"
+{% else %}
+		"lint:php": "php-cs-fixer fix --dry-run",
+{% endif %}
+
 {% if features.rector %}
 		"migration": [
 			"@migration:rector"
