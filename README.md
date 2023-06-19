@@ -12,12 +12,11 @@
 
 </div>
 
-This is a framework agnostic [Project Builder](https://github.com/CPS-IT/project-builder) template with a relatively basic initial setup. It facilitates a swift and easy-to-use creation
+This is a framework-agnostic [Project Builder](https://github.com/CPS-IT/project-builder) template with a relatively basic initial setup. It facilitates a swift and easy-to-use creation
 of Composer based PHP projects.
 
 ## 🚀 Features
 
-* Ready-to-use [DDEV](https://ddev.readthedocs.io) configuration
 * Static code analysis template with [PHPStan](https://phpstan.org/)
 * Automatic code migration with [Rector](https://getrector.com/)
 

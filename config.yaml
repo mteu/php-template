@@ -23,9 +23,6 @@ steps:
           target: 'LICENSE.txt'
   - type: generateBuildArtifact
   - type: mirrorProcessedFiles
-  - type: showNextSteps
-    options:
-      templateFile: templates/next-steps.html.twig
 
 properties:
   # Project
@@ -85,39 +82,6 @@ properties:
       - identifier: rector
         name: Should <comment>Rector</comment> be integrated?
         type: question
-
-  # DDEV
-  - identifier: ddev
-    name: DDEV configuration
-    properties:
-      - identifier: name
-        name: Name
-        type: staticValue
-        defaultValue: "{{ project.name|slugify }}"
-        validators:
-          - type: notEmpty
-      - identifier: webserver_type
-        name: Webserver type
-        type: select
-        options:
-          - value: Apache
-          - value: Nginx
-        validators:
-          - type: notEmpty
-      - identifier: db_driver
-        name: Database driver
-        type: select
-        options:
-          - value: MySQL
-          - value: MariaDB
-        validators:
-          - type: notEmpty
-      - identifier: db_version
-        name: Database version
-        type: staticValue
-        defaultValue: "{% if ddev.db_driver == \"MySQL\" %}8.0{% else %}10.4{% endif %}"
-        validators:
-          - type: notEmpty
 
   # Author
   - identifier: author
