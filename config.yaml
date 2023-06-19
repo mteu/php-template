@@ -23,9 +23,6 @@ steps:
           target: 'LICENSE.txt'
   - type: generateBuildArtifact
   - type: mirrorProcessedFiles
-  - type: showNextSteps
-    options:
-      templateFile: templates/next-steps.html.twig
 
 properties:
   # Project
