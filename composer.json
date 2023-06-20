@@ -1,6 +1,6 @@
 {
 	"name": "mteu/basic-project-template",
-	"description": "Very basic, framework agnostic template",
+	"description": "Basic PHP template",
 	"license": "GPL-3.0-or-later",
 	"type": "project-builder-template",
 	"authors": [
