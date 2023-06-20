@@ -13,8 +13,8 @@ all steps below.
 
 ```bash
 # Clone repository
-git clone https://github.com/mteu/project-builder-template.git
-cd project-builder-template
+git clone https://github.com/mteu/basic-project-template.git
+cd basic-project-template
 
 # Install dependencies
 composer install
