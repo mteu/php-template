@@ -38,7 +38,7 @@ of Composer based PHP projects.
 
 
 
-> 💡 Please refer to the official Project Builder [documentation](https://github.com/CPS-IT/project-builder/blob/main/docs/usage.md)
+> 💡 Please refer to the official Project Builder [documentation](https://project-builder.cps-it.de)
 > to learn about alternative ways to create your project.
 
 ## 👩‍💻:🧑‍💻 Contribution
