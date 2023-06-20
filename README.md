@@ -31,7 +31,12 @@ of Composer based PHP projects.
 
 2. Select `Packagist.org` as template source.
 3. Select the package `mteu/basic-project-template`.
+
+   ![image](assets/template-selection.png)
+
 4. Answer all questions, follow the instructions, and you're good to go.
+
+
 
 > 💡 Please refer to the official Project Builder [documentation](https://github.com/CPS-IT/project-builder/blob/main/docs/usage.md)
 > to learn about alternative ways to create your project.
