@@ -21,6 +21,10 @@ steps:
         - path: 'licenses/MIT.txt.twig'
           if: 'project["license"] == "MIT"'
           target: 'LICENSE.txt'
+        # GitHub Actions
+        - path: '.github/*'
+          if: 'features["github-actions"]'
+
   - type: generateBuildArtifact
   - type: mirrorProcessedFiles
 
@@ -77,10 +81,13 @@ properties:
     name: Additional features
     properties:
       - identifier: phpstan
-        name: Should <comment>PHPStan</comment> be integrated?
+        name: Will you be needing <comment>PHPStan</comment>?
         type: question
       - identifier: rector
-        name: Should <comment>Rector</comment> be integrated?
+        name: Will you be needing <comment>Rector</comment>?
+        type: question
+      - identifier: github-actions
+        name: How about some <comment>GitHub Actions</comment>?
         type: question
 
   # Author
