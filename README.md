@@ -29,12 +29,12 @@ of Composer based PHP projects.
    composer create-project cpsit/project-builder <target-directory>
    ```
 
-2. Select `Packagist.org` as template source.
+2. [Project Builder](https://github.com/CPS-IT/project-builder) will automatically fetch and list available templates on `Packagist.org`.
 3. Select the package `mteu/basic-project-template`.
 
    ![image](assets/template-selection.png)
 
-4. Answer all questions, follow the instructions, and you're good to go.
+4. Follow the instructions and answer a few questions and you're good to go.
 
 
 
