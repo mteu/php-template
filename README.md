@@ -19,6 +19,7 @@ of Composer based PHP projects.
 
 * Static code analysis template with [PHPStan](https://phpstan.org/)
 * Automatic code migration with [Rector](https://getrector.com/)
+* Pre-defined GitHub actions for CGL and releases
 
 ## 🔥 Getting started
 
