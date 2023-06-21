@@ -64,21 +64,22 @@
 		],
 		"lint:composer": "@composer normalize --dry-run",
 		"lint:editorconfig": "ec",
-{% if not features.rector and not features.phpstan and not features.phpunit %}
-		"lint:php": "php-cs-fixer fix --dry-run"
-{% else %}
-		"lint:php": "php-cs-fixer fix --dry-run",
-{% endif %}
 
-{% if features.rector %}
-	{% include '_partials/rector.composer.json.twig' %}
-{% endif %}
-{% if features.phpstan %}
-	{% include '_partials/phpstan.composer.json.twig' %}
-{% endif %}
-{% if features.phpunit %}
-	{% include '_partials/phpunit.composer.json.twig' %}
-{% endif %}
+		{# turns out, there is no switch in twig #}
+		{% for feature in features %}
+			{% if feature == 'phpstan' %}
+				{% include '_partials/phpstan.composer.json.twig' %}
+			{% elseif feature == 'phpunit' %}
+				{% include '_partials/phpunit.composer.json.twig' %}
+			{% elseif feature == 'rector' %}
+				{% include '_partials/rector.composer.json.twig' %}
+			{% else %}
+				{# Default case code here #}
+			{% endif %}
+		{% endfor %}
+
+		{# todo: make sure to composer normalize afterwards #}
+		"lint:php": "php-cs-fixer fix --dry-run"
 	},
 	"scripts-descriptions": {
 		"fix": "Fix all code quality issues reported by the registered linters",
