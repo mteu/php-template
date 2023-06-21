@@ -11,6 +11,15 @@ steps:
         # Rector
         - path: 'rector.php.twig'
           if: 'features["rector"]'
+        # PHPUnit
+        - path: 'phpunit.xml'
+          if: 'features["phpunit"]'
+        - path: '.github/tests.yaml.twig'
+          if: 'features["phpunit"]' && 'features["github-actions"]'
+        # GitHub Actions
+        - path: '.github/*'
+          if: 'features["github-actions"]'
+
         # Licenses
         - path: 'licenses/GPL-2.0.txt'
           if: 'project["license"] == "GPL-2.0-or-later"'
@@ -21,9 +30,6 @@ steps:
         - path: 'licenses/MIT.txt.twig'
           if: 'project["license"] == "MIT"'
           target: 'LICENSE.txt'
-        # GitHub Actions
-        - path: '.github/*'
-          if: 'features["github-actions"]'
 
   - type: generateBuildArtifact
   - type: mirrorProcessedFiles
@@ -81,10 +87,13 @@ properties:
     name: Additional features
     properties:
       - identifier: phpstan
-        name: Will you be needing <comment>PHPStan</comment>?
+        name: Do you care for static code analysis with <comment>PHPStan</comment>?
+        type: question
+      - identifier: phpunit
+        name: You are going to write unit tests with <comment>PHPUnit</comment>, aren't you?
         type: question
       - identifier: rector
-        name: Will you be needing <comment>Rector</comment>?
+        name: Will you be needing migration assistance from <comment>Rector</comment>?
         type: question
       - identifier: github-actions
         name: How about some <comment>GitHub Actions</comment>?
