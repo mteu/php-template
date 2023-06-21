@@ -64,31 +64,21 @@
 		],
 		"lint:composer": "@composer normalize --dry-run",
 		"lint:editorconfig": "ec",
-{%if not features.rector and not features.phpstan %}
+{% if not features.rector and not features.phpstan and not features.phpunit %}
 		"lint:php": "php-cs-fixer fix --dry-run"
 {% else %}
 		"lint:php": "php-cs-fixer fix --dry-run",
 {% endif %}
 
 {% if features.rector %}
-		"migration": [
-			"@migration:rector"
-		],
-		"migration:rector": [
-			"Composer\\Config::disableProcessTimeout",
-			"rector process"
-		],
+	{% include '_partials/rector.composer.json.twig' %}
 {% endif %}
 {% if features.phpstan %}
-		"sca": [
-			"@sca:php"
-		],
-		"sca:php": "phpstan analyse -c phpstan.neon --memory-limit=2G",
+	{% include '_partials/phpstan.composer.json.twig' %}
 {% endif %}
-		"test": [
-			"@test:unit"
-		],
-		"test:unit": "phpunit -c phpunit.xml"
+{% if features.phpunit %}
+	{% include '_partials/phpunit.composer.json.twig' %}
+{% endif %}
 	},
 	"scripts-descriptions": {
 		"fix": "Fix all code quality issues reported by the registered linters",

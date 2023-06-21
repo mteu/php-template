@@ -15,10 +15,14 @@ steps:
         - path: 'phpunit.xml'
           if: 'features["phpunit"]'
         - path: '.github/tests.yaml.twig'
-          if: 'features["phpunit"]' && 'features["github-actions"]'
+          if: 'features["phpunit"] && features["github-actions"]'
         # GitHub Actions
         - path: '.github/*'
           if: 'features["github-actions"]'
+
+        # temporary hack
+        - path: '_partials/*'
+          if: '1 === 2'
 
         # Licenses
         - path: 'licenses/GPL-2.0.txt'
