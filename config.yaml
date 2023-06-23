@@ -27,6 +27,12 @@ steps:
 
   - type: generateBuildArtifact
   - type: mirrorProcessedFiles
+  - type: runCommand
+    options:
+      command: "echo 'Hello World!'"
+  - type: runCommand
+    options:
+      command: "echo 'Second command'"
 
 properties:
   # Project
