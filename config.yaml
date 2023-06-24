@@ -55,6 +55,7 @@ properties:
       - identifier: url
         name: Website URL
         type: staticValue
+        defaultValue: "https://github.com/{{ project.vendor|slugify }}/{{ project.name|slugify }}"
         validators:
           - type: notEmpty
           - type: url
