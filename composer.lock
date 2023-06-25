@@ -82,16 +82,16 @@
         },
         {
             "name": "cpsit/project-builder",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CPS-IT/project-builder.git",
-                "reference": "ef647aa070ae7d4ccfc68c9ed473d01a21e00964"
+                "reference": "385c89f1afb0ee1d0c516c18570ac2732426b492"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CPS-IT/project-builder/zipball/ef647aa070ae7d4ccfc68c9ed473d01a21e00964",
-                "reference": "ef647aa070ae7d4ccfc68c9ed473d01a21e00964",
+                "url": "https://api.github.com/repos/CPS-IT/project-builder/zipball/385c89f1afb0ee1d0c516c18570ac2732426b492",
+                "reference": "385c89f1afb0ee1d0c516c18570ac2732426b492",
                 "shasum": ""
             },
             "require": {
@@ -135,8 +135,8 @@
                 "phpstan/phpstan-strict-rules": "^1.2",
                 "phpstan/phpstan-symfony": "^1.2",
                 "phpstan/phpstan-webmozart-assert": "^1.2",
-                "phpunit/phpunit": "^10.0.0",
-                "rector/rector": "^0.16.0",
+                "phpunit/phpunit": "^10.1",
+                "rector/rector": "^0.17.0",
                 "seld/jsonlint": "^1.9"
             },
             "type": "library",
@@ -155,17 +155,21 @@
             "authors": [
                 {
                     "name": "Elias Häußler",
-                    "email": "e.haeussler@familie-redlich.de",
-                    "homepage": "https://www.cps-it.de",
+                    "email": "elias@haeussler.dev",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "Martin Adler",
+                    "email": "mteu@mailbox.org",
+                    "role": "Developer"
                 }
             ],
             "description": "Composer package to create new projects from project templates",
             "support": {
                 "issues": "https://github.com/CPS-IT/project-builder/issues",
-                "source": "https://github.com/CPS-IT/project-builder/tree/2.2.2"
+                "source": "https://github.com/CPS-IT/project-builder/tree/2.2.3"
             },
-            "time": "2023-05-08T12:35:11+00:00"
+            "time": "2023-06-25T09:55:58+00:00"
         },
         {
             "name": "cuyz/valinor",
