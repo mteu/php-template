@@ -17,9 +17,10 @@ of Composer based PHP projects.
 
 ## 🚀 Features
 
-* Static code analysis template with [PHPStan](https://phpstan.org/)
-* Automatic code migration with [Rector](https://getrector.com/)
-* Pre-defined GitHub actions for CGL and releases
+* Linting with [PHP CS-Fixer](https://cs.symfony.com/)
+* Static code analysis template with [PHPStan](https://phpstan.org/) *(optional)*
+* Automatic code migration with [Rector](https://getrector.com/) *(optional)*
+* Pre-defined GitHub actions for CGL and releases *(optional)*
 
 ## 🔥 Getting started
 
