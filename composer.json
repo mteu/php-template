@@ -3,6 +3,7 @@
 	"description": "Basic PHP template",
 	"license": "GPL-3.0-or-later",
 	"type": "project-builder-template",
+	"abandoned": "eliashaeussler/composer-package-template",
 	"authors": [
 		{
 			"name": "Martin Adler",
