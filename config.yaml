@@ -58,9 +58,13 @@ properties:
         defaultValue: "{{ project.vendor|slugify }}/{{ project.name|slugify }}"
         validators:
           - type: notEmpty
+          - type: regex
+            options:
+              pattern: '/^[a-z0-9]([_.-]?[a-z0-9]+)*\/[a-z0-9](([_.]|-{1,2})?[a-z0-9]+)*$/'
       - identifier: url
         name: Website URL
         type: staticValue
+        defaultValue: "https://github.com/{{ project.vendor|slugify }}/{{ project.name|slugify }}"
         validators:
           - type: notEmpty
           - type: url
