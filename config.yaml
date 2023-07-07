@@ -30,6 +30,12 @@ steps:
   - type: runCommand
     options:
       command: "composer install"
+  - type: runCommand
+    options:
+      command: "git init --initial-branch=main"
+  - type: runCommand
+    options:
+      command: "git commit add . && git commit -am 'Initial commit'"
 
 properties:
   # Project
