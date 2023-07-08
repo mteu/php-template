@@ -29,11 +29,8 @@ steps:
   - type: mirrorProcessedFiles
   - type: runCommand
     options:
-      command: "composer normalize"
+      command: "composer install && composer normalize"
       skipConfirmation: true
-  - type: runCommand
-    options:
-      command: "composer install"
   - type: runCommand
     options:
       command: "git init --initial-branch=main"
