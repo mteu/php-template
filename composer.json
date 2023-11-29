@@ -12,11 +12,11 @@
 		}
 	],
 	"require": {
-		"cpsit/project-builder": "^2.5"
+		"cpsit/project-builder": "^2.6"
 	},
 	"require-dev": {
-		"armin/editorconfig-cli": "^1.6",
-		"ergebnis/composer-normalize": "^2.37",
+		"armin/editorconfig-cli": "^1.7",
+		"ergebnis/composer-normalize": "^2.39",
 		"friendsoftwig/twigcs": "^6.2"
 	},
 	"config": {
