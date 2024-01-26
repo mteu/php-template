@@ -29,7 +29,7 @@ steps:
   - type: mirrorProcessedFiles
   - type: runCommand
     options:
-      command: "composer install && composer normalize"
+      command: "composer update && composer normalize"
       skipConfirmation: true
   - type: runCommand
     options:
