@@ -1,6 +1,6 @@
 {
-	"name": "mteu/basic-project-template",
-	"description": "Basic PHP template",
+	"name": "mteu/php-template",
+	"description": "Simple PHP template",
 	"license": "GPL-3.0-or-later",
 	"type": "project-builder-template",
 	"authors": [
@@ -12,12 +12,12 @@
 		}
 	],
 	"require": {
-		"cpsit/project-builder": "^2.6"
+		"cpsit/project-builder": "^2.7"
 	},
 	"require-dev": {
 		"armin/editorconfig-cli": "^2.0",
-		"ergebnis/composer-normalize": "^2.39",
-		"friendsoftwig/twigcs": "^6.2"
+		"ergebnis/composer-normalize": "^2.42",
+		"friendsoftwig/twigcs": "^6.4"
 	},
 	"config": {
 		"allow-plugins": {
