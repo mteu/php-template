@@ -28,7 +28,7 @@ of Composer based PHP projects.
    ```
 
 2. [Project Builder](https://github.com/CPS-IT/project-builder) will automatically fetch and list available templates on `Packagist.org`.
-3. Select the package `mteu/basic-project-template`.
+3. Select the package `mteu/php-template`.
 
    ![image](assets/template-selection.png)
 
